@@ -94,4 +94,5 @@ def _make_node_runner(runner):
 
 
 def _short_title(node) -> str:
-    return f"{node.rule.name} [{node.fingerprint[:8]}]"
+    rule_name = node.key.split("/")[0]
+    return f"{rule_name} [{node.fingerprint[:8]}]"
