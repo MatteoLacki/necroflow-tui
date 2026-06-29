@@ -11,5 +11,8 @@ dependencies = [
     "panelview",
 ]
 
+[project.scripts]
+necroflow-tui = "necroflow_tui.cli:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/necroflow_tui"]
