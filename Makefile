@@ -8,8 +8,8 @@ $(STAMP): pyproject.toml
 	.venv/bin/pip install -e $(NF_SRC) -e ../panelview -e . -q
 	touch $(STAMP)
 
-# Run the necroalchemy example from the necroflow root so that the relative
-# .pipeline path in necroalchemy_job.toml resolves correctly.
+# Run from the necroflow source root so the relative .pipeline path in
+# necroalchemy_job.toml resolves correctly.
 example: $(STAMP)
 	cd $(NF_SRC) && $(NF_TUI) \
 	    --outdir $(abspath .)/examples/output \

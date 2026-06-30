@@ -1,0 +1,4 @@
+#name	url	type	value
+multigit	git@github.com:MatteoLacki/multigit.git	branch	main
+necroflow	git@github.com:MatteoLacki/necroflow.git	branch	main
+panelview	git@github.com:MatteoLacki/panelview.git	branch	main
