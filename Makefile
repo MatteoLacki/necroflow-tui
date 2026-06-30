@@ -18,4 +18,7 @@ example: $(STAMP)
 clean-example:
 	rm -rf examples/output
 
-.PHONY: example clean-example
+clean:
+	rm -rf .venv examples/output
+
+.PHONY: example clean-example clean
